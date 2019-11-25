@@ -1,0 +1,58 @@
+.userInfo{
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid #ff0e3b;
+    background: #494545;
+    border-radius: 4px;
+}
+
+.userInfo .userInfo__image{
+
+}
+
+.userInfo .userInfo__image img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.userInfo .userInfo__properties{
+    font-size: 1.4rem;
+}
+
+.userInfo .userInfo__edit{
+    background: #35353f;
+    padding: 5px 25px;
+    color: white;
+    font-size: 1.4rem;
+    outline: none;
+}
+
+.userInfo .userInfo__properties>*{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px){
+    .userInfo{
+        max-width: 90%;
+    }
+
+    .userInfo .userInfo__properties>*{
+        font-size: 1.8rem;
+        display: block;
+        margin: 10px 0;
+    }    
+
+    .userInfo .userInfo__edit{
+        margin: 10px 0;
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
+
+

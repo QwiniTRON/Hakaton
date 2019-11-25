@@ -1,0 +1,20 @@
+.item{
+    background: #747479;
+    padding: 5px;
+}
+
+.item .item__image{
+    width: 100%;
+}
+
+.item .item__title{
+    text-align: center;
+    padding: 5px;
+}
+
+.item .item__description{
+    padding: 5px;
+}
+
+
+
