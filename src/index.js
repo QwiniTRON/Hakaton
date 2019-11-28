@@ -12,7 +12,6 @@ import ProfilePage from "./views/pages/profile/Profile";
 import ordersPage from "./views/pages/orders/Orders";
 import cartPage from "./views/pages/cart/Cart";
 import favoritesPage from "./views/pages/favorites/Favorites";
-import { Provider } from 'react-redux';
 import store from "./core/redux/store";
 
 

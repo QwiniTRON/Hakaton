@@ -7,19 +7,35 @@ import image from "./default.jpg";
 
 export default class Product extends React.Component{
     constructor(props){
-      super(props);
-  
+        super(props);
+
+        this.handleChange = this.handleChange.bind(this);
+
+        this.state = {
+            counter: 1,
+        };
     }
-  
+
+    handleChange(event){
+        let name = event.target.name;
+        let value = event.target.value;
+
+        if(value >= 1){
+            this.setState({
+                [name]: value
+            });
+        }
+    }
+
     render(){
-      console.log(this);
-      
-      return (
+        console.log(this);
+        
+        return (
         <div className="main">
     <Header />
             <div className="product">
-                  <div className="content">
-                  <div className="blockPhoto">
+                    <div className="content">
+                    <div className="blockPhoto">
                     <div className="mainPhoto">
                         <img src={image} alt="Main" />
                     </div>
@@ -35,13 +51,11 @@ export default class Product extends React.Component{
         New car
     </p>
 
-        <input type="number" name="counter" />
-        <button className="bu1" name="B1" value="#">
-                В корзину
-                </button>
-
+        <input value={this.state.counter} onChange={this.handleChange} type="number" name="counter" />
+        <button className="bu1" name="B1" value="#">В корзину</button>
+        <div className="product__favorite">Добавить в избранное</div>
     </article>
-                  </div>
+                    </div>
                 
             </div>
             <Footer />

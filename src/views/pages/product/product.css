@@ -37,6 +37,17 @@
     
  }
     
+
+ .product .product__favorite{
+  width: 100%;
+  background: #ff0e3b;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 5px;
+  cursor: pointer;
+ }
+
  .bu1:active{
     background-color: red;
   } 
