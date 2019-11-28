@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 .main{
     min-height: 100vh;
@@ -9,4 +12,114 @@
 
 .main .content{
     flex-grow: 1;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.main .sidebar{
+    background: #54545e;
+    max-width: 300px;
+    align-self: flex-start;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.main .sidebar__content{
+
+}
+
+.main .sidebar__categoryes{
+    margin-bottom: 20px;
+}
+
+.main .sidebar__category{
+    padding: 5px;
+    margin: 3px;
+    border-left: 4px solid #35353f;
+    border-bottom: 2px solid #35353f;
+    cursor: pointer;
+}
+
+.main .sidebar__filters{
+    
+}
+
+.main .sidebar__priceFilter{
+    
+}
+
+.main .sidebar__min, .main .sidebar__max{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin: 5px 0;
+}
+
+.main .sidebar__minPrice,.main .sidebar__maxPrice{
+    background: #000;
+    color: white;
+    padding: 0 5px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+
+.main .sidebar__doFilters{
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    background: #ff0e3b;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.sidebar__opener{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .main .content{
+        flex-wrap: wrap;
+        min-width: 200px;
+    }
+
+    .sidebar__opener{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        font-size: 2rem;
+        background: #292929;
+        border-radius: 0 10px 0 10px;
+    }
+
+    .main .sidebar{
+        flex-grow: 1;
+        margin: 0;
+        max-width: none;
+        font-size: 1.4rem;
+    }
+
+    .sidebar.hide .sidebar__content{
+        display: none;
+    }
+
+    .main .itemList{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .main .sidebar__minPrice,.main .sidebar__maxPrice{
+        flex-grow: 1;
+        font-size: 1.5rem;
+        padding: 5px 10px;
+        width: 100%;
+    }
+
+    .main .sidebar__doFilters{
+        padding: 20px;
+    }
 }

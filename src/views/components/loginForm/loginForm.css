@@ -1,0 +1,80 @@
+.LoginForm{
+    padding: 30px;
+    padding-top: 40px;
+}
+
+.LoginForm .correct{
+    color: white;
+    font-size: 1.1rem;
+    margin: 3px 0;
+}
+
+.LoginForm .LoginForm__login input{
+    border: none;
+    font-size: 1.5rem;
+    padding: 0 5px;
+    padding-top: 22px;
+}
+
+.LoginForm .LoginForm__password input{
+    border: none;
+    font-size: 24px;
+    padding: 0 5px;
+    margin: 10px 0;
+    padding-top: 22px;
+}
+
+.LoginForm .LoginForm__password, .LoginForm .LoginForm__login{
+    position: relative;
+}
+
+.LoginForm .LoginForm__titleLog, .LoginForm .LoginForm__titlePas{
+    position: absolute;
+    z-index: 25;
+    color: #54545e;
+    left: 5px;
+    top: 0px;
+}
+
+.LoginForm .LoginForm__titleLog{
+    left: 5px;
+    top: -15px;
+}
+
+.LoginForm .LoginForm__submit input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background: #84848e;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+.LoginForm .LoginForm__doReg{
+    padding: 10px;
+    background: #99ff66;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .LoginForm input{
+        width: 100%;
+    }
+
+    .LoginForm .LoginForm__doReg{
+        width: 100%;
+    }
+
+    .LoginForm{
+        padding: 30px;
+        padding-top: 40px;
+        width: 90vw;
+    }
+}
+

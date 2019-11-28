@@ -2,8 +2,9 @@
     display: flex;
     align-items: center;
     background: linear-gradient(to right ,#54545e 0%, #35353f 60%);
-    margin: 5px 0;
+    margin: 5px auto;
     border-left: 5px solid #54545e;
+    width: 95%;
 }
 
 .itemfull .itemfull__img{
@@ -39,6 +40,7 @@
 .itemfull .itemfull__buyblock{
     padding: 10px;
     margin: 30px;
+    flex-grow: 1;
 }
 
 .itemfull .itemfull__buy{

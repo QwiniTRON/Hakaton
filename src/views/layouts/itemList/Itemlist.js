@@ -8,7 +8,8 @@ export default class Itemlist extends React.Component{
       super(props);
         
       this.state = {
-          itemCount: 9
+          itemCount: 12,
+          page: 1,
       };
     }
   
@@ -16,7 +17,7 @@ export default class Itemlist extends React.Component{
     
         let items = [];
         for(let i =0; i<this.state.itemCount; i++){
-            items.push(<Item key={i} item={{id: i, title: "Товар" + i, description: "Описание" + i}} />);
+            items.push(<Item key={i} item={{id: i, categories: "Басуха Классика", title: "Товар" + i, description: "Описание" + i}} />);
         }
 
       return (

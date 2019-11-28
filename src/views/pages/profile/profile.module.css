@@ -1,0 +1,59 @@
+.proflie {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 2fr;
+  background-color: #34343f;
+  width: 100%;
+}
+.childOne {
+  width: 100%;
+  background-color: #54545e;
+  border: 2px solid red;
+  margin-bottom: 20px;
+}
+.childOne img {
+  margin: 20px;
+  border-radius: 200px;
+  width: 150px;
+  height: 150px;
+}
+.childTwo {
+  border: 1px solid #54545e;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: #54545e;
+  color: rgb(209, 209, 209);
+}
+
+.content__span {
+  margin-left: 5px;
+  flex-grow: 1;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.content button {
+  background-color: red;
+  border: 0 solid black;
+  padding: 10px;
+}
+
+.content button:hover {
+  background-color: #34343f;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+  .childOne img {
+    width: 100px;
+    height: 100px;
+  }
+}

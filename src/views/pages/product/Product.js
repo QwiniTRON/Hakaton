@@ -16,37 +16,36 @@ export default class Product extends React.Component{
       
       return (
         <div className="main">
-            <Header />
-            <div className="content">
-              <div className="product">
-                <div className="product__folder">
-                    <div className="folder__main"><img src={image} /></div>
-                    <div className="folder__small"><img src={image} /></div>
-                    <div className="folder__small"><img src={image} /></div>
-                    <div className="folder__small"><img src={image} /></div>
-                </div>
-                <div className="product__buyBlock">
-                    <div className="buyBlock">
-                        <div className="buyBlock__price">
-                            500
-                        </div>
-                        <div className="buyBlock__title"> 
-                          Супер гитара ямаха
-                        </div>
-                        <div className="categories"> 
-                          <div className="categories__item">Бас</div>
-                          <div className="categories__item">электро</div>
-                        </div>
-                        <div className="buyBlock__description">
-                          Ну реально крутая гитара, ну реально.
-                        </div>
-                        <button className="buyBlock__submit">Добавить в корзину</button>
+    <Header />
+            <div className="product">
+                  <div className="content">
+                  <div className="blockPhoto">
+                    <div className="mainPhoto">
+                        <img src={image} alt="Main" />
+                    </div>
+                    <div className="blockPhoto__smallPhotos">
+                        <div className="blockPhoto__smallPhoto"><img src={image} /></div>
+                        <div className="blockPhoto__smallPhoto"><img src={image} /></div>
+                        <div className="blockPhoto__smallPhoto"><img src={image} /></div>
                     </div>
                 </div>
-              </div>
+    <article className="content__article" id="mainArticle">
+        <h3>120 000 рублей в долларах</h3>
+    <p id="Mark">Какая-то марка машины <br />
+        New car
+    </p>
+
+        <input type="number" name="counter" />
+        <button className="bu1" name="B1" value="#">
+                В корзину
+                </button>
+
+    </article>
+                  </div>
+                
             </div>
             <Footer />
         </div>
-      );
+        );
     }
 }

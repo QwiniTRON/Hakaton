@@ -16,6 +16,7 @@ export default class Item extends React.Component{
             <Link to={"/product/" + this.props.item.id}>
                 <div className="item__title">{this.props.item.title}</div>
                 <div className="item__imageFolder"><img className="item__image" src={logo} /></div>
+                <div className="item__categories">{this.props.item.categories}</div>
                 <div className="item__description">{this.props.item.description}</div>
             </Link>
         </div>

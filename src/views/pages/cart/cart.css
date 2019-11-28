@@ -1,3 +1,132 @@
-.orders{
+  .parent {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 10px;
+    padding: 5px;
+  }
+  
+  .parent .childOne,
+  .parent .childTwo {
+    padding: 20px;
+  }
+  
+  .parent .item {
     padding: 10px;
-}
+    background: linear-gradient(40deg, #35353f, #54545e);
+    margin: 10px 0;
+    display: flex;
+    border-left: 4px solid #35353f;
+  }
+  
+  .parent .item:hover {
+    border-left: 6px solid #35353f;
+  }
+  
+  .parent .pricer {
+    width: 80%;
+    position: sticky;
+    margin: 0 auto;
+    background: #35353f;
+    padding: 10px;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .parent .item img {
+    width: 100%;
+    height: 100%;
+  }
+  .parent .item__image {
+    width: 50%;
+  }
+  
+  .parent .item__description {
+    padding-right: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+  }
+  
+  .parent .description__item_title {
+    color: rgb(253, 45, 45);
+    font-size: 40px;
+  }
+  .parent .description__item_desc {
+    color: rgb(143, 143, 143);
+    font-size: 20px;
+  }
+  .parent .text {
+    color: white;
+  }
+  
+  .parent .description__item_price {
+    font-size: 30px;
+    padding-top: 50px;
+  }
+  .parent .descall {
+    padding-top: 10px;
+  }
+  
+  .parent .pricer__price {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid red;
+    margin: 0 15px 10px;
+    padding-bottom: 10px;
+  }
+  
+  .parent   .pricer__title,
+  .parent .pricer__title_itog {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .parent .pricer__title_itog {
+    margin-top: 50px;
+  }
+  
+  .parent .pricer__submit {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+  }
+  .parent .pricer__content {
+    flex-grow: 1;
+  }
+  
+  .parent .pricer__value {
+    color: rgb(209, 209, 209);
+    float: right;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .parent .item {
+      flex-direction: column;
+      align-items: center;
+    }
+    .parent .pricer__value {
+      display: block;
+      float: none;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .parent {
+      grid-template-columns: 1fr;
+    }
+  
+    .parent .childTwo {
+      order: -1;
+    }
+    .parent .pricer__value {
+      margin: 5px 0;
+    }
+  }

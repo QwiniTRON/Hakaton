@@ -1,0 +1,15 @@
+.paginator{
+    display: flex;
+    margin-top: 10px;
+}
+
+.paginator .paginator__link, .paginator .paginator__link_active, .paginator .paginator__prev, .paginator .paginator__next , .paginator .paginator__maxprev, .paginator .paginator__maxnext{
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.paginator .paginator__link_active{
+    border-bottom: 2px solid #ff0e3b;
+}

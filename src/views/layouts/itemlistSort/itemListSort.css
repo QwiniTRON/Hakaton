@@ -1,0 +1,14 @@
+.itemListSort{
+    width: 100%;
+}
+
+.itemListSort .itemListSort__filter{
+    margin-bottom: 10px;
+}
+
+.itemListSort .itemListSort__filter select{
+    font-size: 1.2rem;
+    background: #54545e;
+    color: white;
+}
+

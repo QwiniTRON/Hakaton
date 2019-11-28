@@ -1,0 +1,32 @@
+.modal .modal__block{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 15;
+}
+
+.modal .modal__content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1f1f1f;
+    z-index: 20;
+}
+
+.modal .modal__closer{
+    position: absolute;
+    color: white;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 5px;
+    background: #54545e;
+    outline: none;
+    z-index: 10;
+}
+
+
